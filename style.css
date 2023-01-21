@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+
+}
+
+main {
+    position: relative;
+    min-height: 100vh;
+    height: 100%;
+    background-image: url(./images/bg-desktop.svg);
+    background-color: var(--Violet);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding: 4rem 3rem 4rem 5rem;
+}
+
+h1 {
+    font-family: "Poppins";
+}
+
+h3 {
+    font-family: "Open Sans";
+    font-weight: 200;
+}
+
+.container {
+    margin-top: 4.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.content{
+    padding: 2.5rem 0rem 0rem 4rem;
+    line-height: 1.6;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    margin-top: 1.25rem;
+    opacity: 0.8;
+}
+
+button {
+    font-size: 1.25rem;
+    color: var(--Violet);
+    margin-top: 2rem;
+    border: none;
+    background-color: white;
+    padding: 1.25rem 4rem;
+    border-radius: 2rem;
+    transition: ease-in-out 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+button:hover {
+    cursor: pointer;
+    color: white;
+    background-color: var(--Soft-Magenta);
+}
+
+.social-media {
+    position: absolute;
+    bottom: 2rem;
+    right: 4rem;
+}
+
+.social-media > i {
+    width: 3.625rem;
+    padding: 0.75rem;
+}
+
+.social-media > i:hover {
+    cursor: pointer;
+    color: var(--Soft-Magenta);
+}
